@@ -1,0 +1,104 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="db\Chandler\result.emb" />
+    <None Remove="db\Chandler\result.jpg" />
+    <None Remove="db\Chandler\result.png" />
+    <None Remove="db\Joey\result.emb" />
+    <None Remove="db\Joey\result.jpg" />
+    <None Remove="db\Joey\result.png" />
+    <None Remove="db\Monica\result.emb" />
+    <None Remove="db\Monica\result.jpg" />
+    <None Remove="db\Monica\result.png" />
+    <None Remove="db\Phoebe\result.emb" />
+    <None Remove="db\Phoebe\result.jpg" />
+    <None Remove="db\Phoebe\result.png" />
+    <None Remove="db\Rachel\result.emb" />
+    <None Remove="db\Rachel\result.jpg" />
+    <None Remove="db\Rachel\result.png" />
+    <None Remove="db\Ross\result.emb" />
+    <None Remove="db\Ross\result.jpg" />
+    <None Remove="db\Ross\result.png" />
+    <None Remove="friends.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="db\Chandler\result.emb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Chandler\result.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Chandler\result.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Joey\result.emb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Joey\result.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Joey\result.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Monica\result.emb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Monica\result.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Monica\result.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Phoebe\result.emb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Phoebe\result.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Phoebe\result.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Rachel\result.emb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Rachel\result.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Rachel\result.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Ross\result.emb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Ross\result.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db\Ross\result.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="friends.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DetectFace.Service\DetectFace.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Program.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+</Project>
