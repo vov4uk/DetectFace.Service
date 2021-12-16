@@ -77,7 +77,7 @@ namespace DetectFace.ConsoleApp
                 else 
                 {
                     FaceDetectionAdv.SaveFaceImg(face, Cv2.ImRead(filePath), fileName);
-                }                
+                }
 
                 var faceRectImg = new Mat(face.Mat, face.FaceRectangle);
                 var recognizedFaces = faceRec.Recognize(faceRectImg.Clone());
